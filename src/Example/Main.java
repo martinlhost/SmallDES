@@ -7,11 +7,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		Simulation s = new Simulation();
-		Generator A = new Generator(s, "A");
-		Generator B = new Generator(s, "B");
-		A.message(new Event());
-		B.message(new Event());
-		s.simulate(100);
+		for (int i = 0; i < 100; i++) 
+			new TestProcess(s, "G"+i).message(new Event());
+		s.simulate(10);
 	}
 
 }

@@ -16,12 +16,10 @@ public abstract class Process {
 		s.addEvent(e);
 	}
 	
-	public Event setTimer(double duration) {
-		Event e = new Event();
+	public void setTimer(double duration, Event e) {
 		e.setProcess(this);
 		e.setTime(duration + s.getTime());
 		s.addEvent(e);
-		return e;  // return e so that deleteTimer can be implemented
 	}
 
 }
