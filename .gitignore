@@ -1,0 +1,35 @@
+# Java, Scala
+**/*.class
+
+# Sbt
+**/target
+
+# sbteclipse plugin
+.target
+
+# Eclipse
+.cache-main
+.metadata
+.project
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.scala_dependencies
+.worksheet
+
+# IntelliJ
+.idea
+
+# Editor swap files
+*~      # emacs
+*.swp   # vim
+
