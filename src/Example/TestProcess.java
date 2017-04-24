@@ -16,7 +16,7 @@ public class TestProcess extends Process {
 	}
 
 	public void handleEvent(Event e) {
-		System.out.println(name + " " + e);
+		System.out.println(name + "..." + e);
 		setTimer(r.nextDouble(), new Event());
 	}
 
