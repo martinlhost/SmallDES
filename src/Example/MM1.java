@@ -31,6 +31,7 @@ public class MM1 extends Process {
 			n--;
 			if (n>0) // the queue isn't empty
 				this.setTimer(s.negExp(jobExecutionTime), new JobDoneEvent());
+			return;
 		}
 	}
 
