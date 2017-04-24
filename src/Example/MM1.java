@@ -1,6 +1,6 @@
 package Example;
 
-import java.util.Random;
+
 
 import Simulation.*;
 import Simulation.Process;
@@ -10,7 +10,6 @@ public class MM1 extends Process {
 
 	private static double jobExecutionTime = 10.0;
 
-	Random r = new Random();
 	int n; // number jobs in queue + server
 	
 	public MM1(Simulation s) {
