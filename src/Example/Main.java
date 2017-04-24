@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		Simulation s = new Simulation();
 		for (int i = 0; i < 100; i++) 
-			new TestProcess(s, "G"+i).message(new Event());
+			new TestProcess(s, "TP"+i).message(new Event());
 		s.simulate(10);
 	}
 

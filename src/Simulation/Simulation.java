@@ -7,7 +7,7 @@ import java.util.Random;
 public class Simulation {
 	
 	private PriorityQueue<Event> queue;      	// the event queue
-	private double time; 						// the time
+	private double time; 						// the global time
 
 	
 	public Simulation() {
@@ -16,7 +16,7 @@ public class Simulation {
 				     return (o1.getT() < o2.getT() ? -1 : (o1.getT() > o2.getT() ? 1 : 0));
 			      }
 		        });
-		time = 0.0;
+		time = 0.0; 
 	}
 	
 	public void addEvent(Event e) {

@@ -16,7 +16,7 @@ public abstract class Process {
 		s.addEvent(e);
 	}
 	
-	public void setTimer(double duration, Event e) {
+	protected void setTimer(double duration, Event e) {
 		e.setProcess(this);
 		e.setTime(duration + s.getTime());
 		s.addEvent(e);
