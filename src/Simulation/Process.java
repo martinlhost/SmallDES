@@ -1,13 +1,14 @@
 package Simulation;
 
+
 public abstract class Process {
 	
-	protected Simulation s;
+	protected Simulation s;	
 	
 	public Process (Simulation s) {
 		this.s = s;
 	}
-	
+		
 	public abstract void handleEvent(Event e);
 	
 	public void message(Event e)  {
