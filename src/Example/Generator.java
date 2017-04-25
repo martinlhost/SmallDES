@@ -16,7 +16,7 @@ public class Generator extends Process {
 	}
 
 	public void handleEvent(Event e) {
-		myMM1.message(new NewJobEvent());
+		myMM1.message(new Event("newJob"));
 		this.setTimer(s.negExp(interArrivalTime), new Event());		
 	}
 
