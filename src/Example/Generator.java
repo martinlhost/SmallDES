@@ -13,6 +13,7 @@ public class Generator extends Process {
 	public Generator(Simulation s, MM1 mm1) {
 		super(s);
 		myMM1 = mm1;
+		this.setTimer(0.0, new Event());  // start the generator
 	}
 
 	public void handleEvent(Event e) {
