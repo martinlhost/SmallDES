@@ -1,3 +1,6 @@
+# simulation results (output from simulation program)
+*.sim
+
 # Java, Scala
 **/*.class
 
@@ -21,6 +24,7 @@ tmp/
 local.properties
 .loadpath
 .recommenders
+.classpath
 
 # Scala IDE specific (Scala & Java development for Eclipse)
 .scala_dependencies
@@ -33,6 +37,9 @@ local.properties
 *~      # emacs
 *.swp   # vim
 
-# simulation results
-*.sim
+# Mac OS 
+.DS_Store
+
+# R files
+.Rhistory
 
