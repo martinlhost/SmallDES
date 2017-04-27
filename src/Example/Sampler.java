@@ -9,7 +9,7 @@ import Simulation.Simulation;
 
 public class Sampler extends Process {
 
-	private static double sampleInterval = 50.0;
+	private static double sampleInterval = 800.0;
 	
 	private PrintWriter file;
 	private MM1 mm1;
