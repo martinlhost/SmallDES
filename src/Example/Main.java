@@ -9,7 +9,7 @@ public class Main {
 		MM1 mm1 = new MM1(s);
 		Generator g = new Generator(s, mm1);
 		Sampler sampler = new Sampler(s, mm1);
-		s.simulate(500000);
+		s.simulate(50000000);
 		sampler.done();
 	}
 
