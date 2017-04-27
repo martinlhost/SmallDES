@@ -4,16 +4,18 @@ public class Event {
 	
 	private double t;
 	private Process p;
-	private String eventType = null;
+	private String eventType;
 	
-	public Event() {
-		t = 0.0;
-	}
 	
 	public Event(String eventType) {
 		t = 0.0;
 		this.eventType = eventType;
 	}
+
+	public Event() {
+		this(null);
+	}
+
 	
 	public void setTime(double t) {
 		this.t = t;
