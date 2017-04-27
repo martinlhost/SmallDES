@@ -5,8 +5,13 @@ import Simulation.Rand;
 public class TestRand {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println(Rand.exp(10));
+		double sum = 0;
+		int n = 100000;
+		double lambda = 1.0;
+		for (int i = 0; i < n; i++) {
+			sum += Rand.exp(lambda);
+		}
+		System.out.println("Mean: " + (sum/n));
 	}
 
 }
