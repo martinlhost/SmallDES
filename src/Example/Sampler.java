@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import Simulation.Event;
 import Simulation.Process;
+import Simulation.Rand;
 import Simulation.Simulation;
 
 public class Sampler extends Process {
@@ -29,7 +30,7 @@ public class Sampler extends Process {
 	@Override
 	public void handleEvent(Event e) {
 		file.println("" + mm1.nrJobs());
-		this.setTimer(s.negExp(sampleInterval), new Event());
+		this.setTimer(Rand.exp(1/sampleInterval), new Event());
 	}
 	
 	public void done() {

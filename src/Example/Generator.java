@@ -2,6 +2,7 @@ package Example;
 
 import Simulation.Event;
 import Simulation.Process;
+import Simulation.Rand;
 import Simulation.Simulation;
 
 public class Generator extends Process {
@@ -18,7 +19,7 @@ public class Generator extends Process {
 
 	public void handleEvent(Event e) {
 		myMM1.newJob();
-		this.setTimer(s.negExp(interArrivalTime), new Event());		
+		this.setTimer(Rand.exp(1/interArrivalTime), new Event());		
 	}
 
 

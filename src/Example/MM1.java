@@ -21,7 +21,7 @@ public class MM1 extends Process {
 		if (e.type().equals("jobDone")) {
 			n--;
 			if (n>0) // the queue isn't empty
-				this.setTimer(s.negExp(jobExecutionTime), new Event("jobDone"));
+				this.setTimer(Rand.exp(1/jobExecutionTime), new Event("jobDone"));
 			return;
 		}
 		System.out.println("Error: unexpected event type");
@@ -30,7 +30,7 @@ public class MM1 extends Process {
 	public void newJob() {
 		n++;
 		if (n==1) // the server was empty
-			this.setTimer(s.negExp(jobExecutionTime), new Event("jobDone"));
+			this.setTimer(Rand.exp(1/jobExecutionTime), new Event("jobDone"));
 	}
 	
 	public int nrJobs() {

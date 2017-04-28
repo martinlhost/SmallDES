@@ -8,7 +8,6 @@ public class Simulation {
 	
 	private PriorityQueue<Event> queue;      	// the event queue
 	private double time; 						// the global time
-	protected Random rng;
 
 	
 	public Simulation() {
@@ -18,13 +17,8 @@ public class Simulation {
 			      }
 		        });
 		time = 0.0; 
-		rng = new Random();
 	}
 	
-	// preliminary method until we have a proper RNG
-	public double negExp(double mean) {              
-		return Math.log(1-rng.nextDouble())/(-1/mean);
-	}
 
 	
 	public void addEvent(Event e) {
