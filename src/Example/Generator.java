@@ -10,6 +10,7 @@ public class Generator extends Process {
 	private static double interArrivalTime = 15.0;
 	
 	private MM1 myMM1;
+	
 
 	public Generator(Simulation s, MM1 mm1) {
 		super(s);
