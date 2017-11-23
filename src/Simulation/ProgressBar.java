@@ -13,9 +13,9 @@ public class ProgressBar extends Process {
 
 	
 	/**
-	 * Constructs a proress bar
+	 * Constructs a progress bar
 	 * @param s the active simulation
-	 * @param simTime how long teh simulation should last (in simulated time)
+	 * @param simTime how long the simulation should last (in simulated time)
 	 */
 	public ProgressBar(Simulation s, double simTime) {
 		super(s);
