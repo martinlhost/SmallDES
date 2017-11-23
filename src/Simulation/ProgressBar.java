@@ -1,7 +1,7 @@
 package Simulation;
 
 /**
- * A simple "progress bar" in ascii format that shows that the simulation 
+ * A simple "progress bar" in ascii format showing that the simulation 
  * is progressing
  * @author martinh
  *
@@ -10,7 +10,6 @@ public class ProgressBar extends Process {
 	
 	private static int nrMarks = 40;
 	private double timeBetweenMarks;
-
 	
 	/**
 	 * Constructs a progress bar

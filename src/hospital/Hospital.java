@@ -22,7 +22,7 @@ public class Hospital extends Process {
 		Hospital h = new Hospital(s);
 		Generator g = new Generator(s, h);
 		Sampler sampler = new Sampler(s, h);
-		s.simulate(100000000);
+		s.simulate(3e7);
 		sampler.done();
 	}
 	

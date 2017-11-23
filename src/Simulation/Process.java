@@ -13,7 +13,7 @@ public abstract class Process {
 	
 	/** 
 	 * Constructs a new process
-	 * @param s the active simualtion
+	 * @param s the active simulation
 	 */
 	public Process (Simulation s) {
 		this.s = s;
@@ -29,7 +29,7 @@ public abstract class Process {
 	/**
 	 * sets a timer by sending an event to itself after a specified time 
 	 * @param duration time until the event should be received
-	 * @param e teh event that is sent
+	 * @param e the event that is sent
 	 */
 	protected void setTimer(double duration, Event e) {
 		e.setProcess(this);
@@ -47,6 +47,5 @@ public abstract class Process {
 		e.setTime(s.getTime());
 		s.addEvent(e);
 	}
-	
 
 }
