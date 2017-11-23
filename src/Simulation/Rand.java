@@ -4,7 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Offers some common random distributions
- * @author martinh
+ * @author 
  *
  */
 public class Rand {
