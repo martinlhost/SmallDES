@@ -22,12 +22,12 @@ public class Hospital extends Process {
 		Hospital h = new Hospital(s);
 		Generator g = new Generator(s, h);
 		Sampler sampler = new Sampler(s, h);
-		s.simulate(3e7);
+		s.simulate(1e6);
 		sampler.done();
 	}
 	
 	public static double interArrivalTime = 15.0;
-	public static double treatmentTime = 10;
+	public static double treatmentTime = 13;
 	public static int nrDoctors = 1;
 	public static double sampleInterval = 60;
 	
