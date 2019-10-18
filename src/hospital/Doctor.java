@@ -3,12 +3,23 @@ package hospital;
 import Simulation.*;
 import Simulation.Process;
 
+/**
+ * This class simulates a doctor at a hospital. 
+ * @author martinh
+ *
+ */
 public class Doctor extends Process{
 	
 	private String name;
 	private Patient currentPatient;
 	private Hospital h;
 	
+	/**
+ 	 * Creates a new Doctor
+ 	 * @param s the active simulation
+ 	 * @param h the hospital where the doctor is working
+ 	 * @param name the name of the doctor
+ 	 */
 	public Doctor(Simulation s, Hospital h, String name) {
 		super(s);
 		this.name = name; 

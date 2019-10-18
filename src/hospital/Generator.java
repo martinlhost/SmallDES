@@ -5,12 +5,22 @@ import Simulation.Process;
 import Simulation.Rand;
 import Simulation.Simulation;
 
+/**
+ * This class simulates a "generator" that generates patients to a hospital. new
+ * patients are generated at random times and then sent to the hospital.  
+ * @author martinh
+ *
+ */
 public class Generator extends Process {
 	
 	private Hospital h;
 	int n = 0;           // nr generated patients
 	
-
+	/**
+ 	 * Constructs a new generator. 
+ 	 * @param s the active simulation
+ 	 * @param h the hospital where the patients should be treated 
+ 	 */
 	public Generator(Simulation s, Hospital h) {
 		super(s);
 		this.h = h;

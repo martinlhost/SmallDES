@@ -10,11 +10,20 @@ import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 
+/**
+ * A simple Swing GUI for the simulation
+ * @author martinh
+ *
+ */
 public class GUI {
 	
 	JTextField myText; 
 	JProgressBar bar;
 	
+	/**
+	 * Constructs a new GUI.
+	 * @param h the simulated hospital
+	 */
 	public GUI(Hospital h) {
 		JFrame window = new JFrame("Simulated hospital");
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
