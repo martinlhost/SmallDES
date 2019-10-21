@@ -29,10 +29,10 @@ public class Hospital extends Process {
 	}
 	
 	public static double INTER_ARRIVAL_TIME = 6;
-	public static double TRETMENT_TIME = 6;
+	public static double TREATMENT_TIME = 6;
 	public static int NR_DOCTORS = 1;
 	public static double SAMPLE_INTERVAL = 60;
-	public static double SIMULATION_TIME = 3e2;
+	public static double SIMULATION_TIME = 3e8;
 	
 	private static boolean LOGGING_OM = false;  // true -> print events on std out. 
 

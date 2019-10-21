@@ -31,7 +31,7 @@ public class Doctor extends Process{
 		case "newPatient": // from hospital
 			currentPatient = ((HospitalEvent) e).getPatient();
 			h.log("Patient " + currentPatient + " started treatment by " + this);
-			this.setTimer(Rand.exp(1/Hospital.TRETMENT_TIME), new Event("patientTreated"));
+			this.setTimer(Rand.exp(1/Hospital.TREATMENT_TIME), new Event("patientTreated"));
 			break;
 		case "patientTreated" :  // my timer, i.e. patient treated
 			sendMessage(h, new HospitalEvent("patientTreated", currentPatient, this));
