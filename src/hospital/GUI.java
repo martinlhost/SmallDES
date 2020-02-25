@@ -31,7 +31,7 @@ public class GUI {
 		bar = new JProgressBar(0, 100);
 		myText = new JTextField(20);
 		myText.setEditable(false);
-		new Timer(333, new ActionListener() { 
+		new Timer(333, new ActionListener() {      
 				public void actionPerformed(ActionEvent e) {
 					myText.setText("" + h.nrJobs());
 					bar.setValue((int) h.percentageDone());
