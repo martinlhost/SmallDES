@@ -2,6 +2,7 @@ package hospital;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -30,13 +31,17 @@ public class GUI {
 		bar = new JProgressBar(0, 100);
 		myText = new JTextField(20);
 		myText.setEditable(false);
-		new Timer(333, (ActionEvent e) -> {
-				myText.setText("" + h.nrJobs());
-				bar.setValue((int) h.percentageDone());			
+		new Timer(333, new ActionListener() { 
+				public void actionPerformed(ActionEvent e) {
+					myText.setText("" + h.nrJobs());
+					bar.setValue((int) h.percentageDone());
+				}
 		}).start();		
 		JButton button = new JButton("Stop simulation");
-		button.addActionListener((ActionEvent e) -> {
-			System.exit(0);
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
 		});
 		JPanel myPanel = new JPanel(new BorderLayout());
 		myPanel.add(myText, BorderLayout.EAST);
